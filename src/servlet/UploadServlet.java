@@ -29,7 +29,7 @@ public class UploadServlet extends HttpServlet {
 		boolean isMulti = ServletFileUpload.isMultipartContent(request);
 		if (!isMulti) {
 			throw new ServletException("폼태그 확인요망");
-		}
+		} 
 		System.out.println("폼태그의 멀티타입 : " + isMulti);
 		String path = System.getProperty("java.io.tmpdir");
 		System.out.println("내 서버의 임시 경로 : " + path);
